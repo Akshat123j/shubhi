@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Page</title>
+  <style>
+    body {
+      background-color: rgb(254, 252, 255);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    #toggle:not(:checked) + .toggle-box {
+      animation: popUp 1.6s ease-out forwards;
+    }
+
+    #toggle:checked + .toggle-box {
+      animation: popDown 1s ease-in forwards;
+    }
+
+    .content-box {
+      background-color: rgb(10, 86, 152);
+      margin: 0 auto;
+      width: 60%;
+      font-style: italic;
+      padding: 20px;
+      border-radius: 10px;
+      color: black;
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      cursor: pointer;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .red-text {
+      color: red;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .blue-text {
+      color: blue;
+      font-size: 15px;
+      font-style: italic;
+    }
+    .reveal-text {
+        background-image:"bg.jpg";
+        display: none;
+        margin-top: 20px;
+        background-color: rgb(249, 240, 204);
+        font-family: 'Monsieur La Doulaise';
+            src: url('MonsieurLaDoulaise-Regular.woff2') format('woff2'),
+                url('MonsieurLaDoulaise-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        color: black;
+        font-style: italic;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 18px;
+        animation: fadeIn 1s ease-in forwards;
+        }
+
+        #toggle:checked ~ .reveal-text {
+        display: block;
+        }
+
+        @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+        }
+
+    @keyframes popUp {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+    }
+
+    @keyframes popDown {
+      0% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body background="bg.jpg"><i>
+
+    <h1>Hey!! it's for you</h1>
+    <h2>My lovily cutie pie</h2>
+</i>
+
+  <!-- Toggle-enabled box -->
+  <input type="checkbox" id="toggle">
+  <label for="toggle" class="content-box toggle-box">
+      <p class="red-text">Sorry for all that trouble</p>
+      <p class="blue-text">please click to continue</p>
+  </label>
+
+    <div class="reveal-text" style="margin-left: 20%;margin-right: 20%; margin-bottom: 20%;font-size: 20px;">
+        <header style="text-align: left;"><b>Hey!! Shristi</b></header>
+<p></p>
+Mujhe pata hai hum dono Gwalior–Sagar ke beech door hain, aur main JOSAA counseling ke karan bahut zyada occupied ho gaya tha. Mujhe bahut afsos hai ki main tujhe time nahi de paaya — i really missed talking to you. Mujhe pata hai iska asar hamare beech misunderstanding pe pad raha tha.
+
+Aur ek cheez aur—meri dadi bathroom mein gir gayi aur unhe thoda fracture ho gaya. Main unke saath hospital visits aur care mein busy ho gaya, isliye main aur bhi kam available raha. Lekin yeh mera excuse nahi hai, tu deserve karti hai ki main jahaan bhi hoon, time nikaalun aur tujhe feel karwau ki main hoon tere saath.
+
+Dil se sorry yaar 🙏
+
+Sorry for not being there emotionally jab tu chaahti thi.
+
+Sorry humne baatein share nahi ki aur misunderstandings ho gayi—they really hurt me too.
+
+Promise—main aage se better plan karunga. Chahe JOSAA ho ya family matters, i will plan calls, texts, video chats—jo bhi tu chahe, main karunga.
+
+Tu meri sabse special friend hai. i value humari dosti bahut aur main nahi chahta ke hum emotionally bhi distance ho jaayein. Let’s clear the misunderstanding, reset our vibes, and bring back our hasi‑mazaak and deep talks.
+
+Plz forgive me. i love our bond too much to let it fray. ❤️
+
+“Sorry for not being the friend you deserved yahaan aur abhi. Main sudharunga, aur tera saath nahi chodunga.”
+
+When’s a good time for a call? i really want to hear your voice and catch up—JOSAA ke break mein hoon toh time nikal sakta hoon. 😊
+<audio src="tum1.mp3" controls autoplay loop></audio>
+    </div>
+
+</body>
+</html>
